@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<robot name="lars_groundbot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <!-- Define material -->
+    <material name="green">
+        <color rgba="0.0 1.0 0.0 1.0"/>
+    </material>
+
+    <!-- Base Link -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+		<mesh filename="package://lars_groundbot_description/meshes/lars_groundbot.dae" scale="0.01 0.01 0.01"/>
+
+            </geometry>
+            <material name="green"/>
+        </visual>
+    </link>
+
+    <!-- Wheels -->
+    <joint name="left_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="left_wheel"/>
+        <origin xyz="-0.2 0.3 0"/>
+    </joint>
+    <link name="left_wheel"/>
+
+    <joint name="right_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="right_wheel"/>
+        <origin xyz="0.2 0.3 0"/>
+    </joint>
+    <link name="right_wheel"/>
+
+    <!-- LiDAR -->
+    <joint name="lidar_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lidar"/>
+        <origin xyz="0 0 0.2"/>
+    </joint>
+    <link name="lidar">
+        <visual>
+            <geometry>
+                <cylinder radius="0.05" length="0.1"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+    </link>
+
+</robot>

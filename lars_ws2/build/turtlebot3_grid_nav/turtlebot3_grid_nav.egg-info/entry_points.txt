@@ -1,0 +1,3 @@
+[console_scripts]
+grid_navigation = turtlebot3_grid_nav.grid_navigation:main
+

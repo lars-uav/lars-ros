@@ -310,6 +310,15 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(DIRECTORY "urdf" "meshes" "worlds" "DESTINATION" "share/lars_groundbot_description")
+ament_cmake_symlink_install_directory("/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_description" DIRECTORY "urdf" "meshes" "worlds" "DESTINATION" "share/lars_groundbot_description")
+
+# install(DIRECTORY "launch" "DESTINATION" "share/lars_groundbot_description")
+ament_cmake_symlink_install_directory("/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_description" DIRECTORY "launch" "DESTINATION" "share/lars_groundbot_description")
+
+# install(PROGRAMS "launch/spawn_lars_groundbot.py" "DESTINATION" "lib/lars_groundbot_description")
+ament_cmake_symlink_install_programs("/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_description" PROGRAMS "launch/spawn_lars_groundbot.py" "DESTINATION" "lib/lars_groundbot_description")
+
 # install(FILES "/home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/lars_groundbot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_description" FILES "/home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/lars_groundbot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
@@ -351,6 +360,3 @@ ament_cmake_symlink_install_files("/home/tanayrs/lars-ros/lars_ws/src/lars_groun
 
 # install(FILES "/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_description/package.xml" "DESTINATION" "share/lars_groundbot_description")
 ament_cmake_symlink_install_files("/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_description" FILES "/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_description/package.xml" "DESTINATION" "share/lars_groundbot_description")
-
-# install(DIRECTORY "urdf" "meshes" "config" "launch" "worlds" "DESTINATION" "share/lars_groundbot_description")
-ament_cmake_symlink_install_directory("/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_description" DIRECTORY "urdf" "meshes" "config" "launch" "worlds" "DESTINATION" "share/lars_groundbot_description")
