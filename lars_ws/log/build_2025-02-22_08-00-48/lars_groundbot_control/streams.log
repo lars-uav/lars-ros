@@ -1,0 +1,34 @@
+[0.419s] Invoking command in '/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_control': PYTHONPATH=/home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lars_groundbot_control build --build-base /home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/build install --record /home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/install.log --single-version-externally-managed install_data
+[0.568s] running egg_info
+[0.568s] creating ../../build/lars_groundbot_control/lars_groundbot_control.egg-info
+[0.569s] writing ../../build/lars_groundbot_control/lars_groundbot_control.egg-info/PKG-INFO
+[0.569s] writing dependency_links to ../../build/lars_groundbot_control/lars_groundbot_control.egg-info/dependency_links.txt
+[0.569s] writing entry points to ../../build/lars_groundbot_control/lars_groundbot_control.egg-info/entry_points.txt
+[0.569s] writing requirements to ../../build/lars_groundbot_control/lars_groundbot_control.egg-info/requires.txt
+[0.569s] writing top-level names to ../../build/lars_groundbot_control/lars_groundbot_control.egg-info/top_level.txt
+[0.569s] writing manifest file '../../build/lars_groundbot_control/lars_groundbot_control.egg-info/SOURCES.txt'
+[0.570s] reading manifest file '../../build/lars_groundbot_control/lars_groundbot_control.egg-info/SOURCES.txt'
+[0.570s] writing manifest file '../../build/lars_groundbot_control/lars_groundbot_control.egg-info/SOURCES.txt'
+[0.570s] running build
+[0.570s] running build_py
+[0.571s] creating /home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/build
+[0.571s] creating /home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/build/lib
+[0.571s] creating /home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/build/lib/lars_groundbot_control
+[0.571s] copying lars_groundbot_control/__init__.py -> /home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/build/lib/lars_groundbot_control
+[0.571s] running install
+[0.571s] running install_lib
+[0.571s] creating /home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/lib/python3.10/site-packages/lars_groundbot_control
+[0.571s] copying /home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/build/lib/lars_groundbot_control/__init__.py -> /home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/lib/python3.10/site-packages/lars_groundbot_control
+[0.572s] byte-compiling /home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/lib/python3.10/site-packages/lars_groundbot_control/__init__.py to __init__.cpython-310.pyc
+[0.572s] running install_data
+[0.572s] creating /home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/share/ament_index
+[0.572s] creating /home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/share/ament_index/resource_index
+[0.572s] creating /home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/share/ament_index/resource_index/packages
+[0.572s] copying resource/lars_groundbot_control -> /home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/share/ament_index/resource_index/packages
+[0.572s] copying package.xml -> /home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/share/lars_groundbot_control
+[0.572s] running install_egg_info
+[0.573s] Copying ../../build/lars_groundbot_control/lars_groundbot_control.egg-info to /home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/lib/python3.10/site-packages/lars_groundbot_control-0.0.0-py3.10.egg-info
+[0.574s] running install_scripts
+[0.586s] Installing control_node script to /home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/lib/lars_groundbot_control
+[0.586s] writing list of installed files to '/home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/install.log'
+[0.600s] Invoked command in '/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_control' returned '0': PYTHONPATH=/home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tanayrs/lars-ros/lars_ws/install/lars_groundbot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lars_groundbot_control build --build-base /home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/build install --record /home/tanayrs/lars-ros/lars_ws/build/lars_groundbot_control/install.log --single-version-externally-managed install_data
