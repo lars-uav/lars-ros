@@ -1,11 +1,11 @@
 {
   "package_name": "turtlebot3_msgs",
   "non_idl_tuples": [
-    "/home/tanayrs/lars-ros/lars_ws2/src/turtlebot3_msgs:msg/SensorState.msg",
-    "/home/tanayrs/lars-ros/lars_ws2/src/turtlebot3_msgs:msg/Sound.msg",
-    "/home/tanayrs/lars-ros/lars_ws2/src/turtlebot3_msgs:msg/VersionInfo.msg",
-    "/home/tanayrs/lars-ros/lars_ws2/src/turtlebot3_msgs:srv/Sound.srv",
-    "/home/tanayrs/lars-ros/lars_ws2/src/turtlebot3_msgs:srv/Dqn.srv",
-    "/home/tanayrs/lars-ros/lars_ws2/src/turtlebot3_msgs:action/Patrol.action"
+    "/home/tanayrs/lars-ros/lars_ws/src/turtlebot3_msgs:msg/SensorState.msg",
+    "/home/tanayrs/lars-ros/lars_ws/src/turtlebot3_msgs:msg/Sound.msg",
+    "/home/tanayrs/lars-ros/lars_ws/src/turtlebot3_msgs:msg/VersionInfo.msg",
+    "/home/tanayrs/lars-ros/lars_ws/src/turtlebot3_msgs:srv/Sound.srv",
+    "/home/tanayrs/lars-ros/lars_ws/src/turtlebot3_msgs:srv/Dqn.srv",
+    "/home/tanayrs/lars-ros/lars_ws/src/turtlebot3_msgs:action/Patrol.action"
   ]
 }

@@ -1,3 +1,1 @@
-# Messages
-uint8 id
-int32 position
+/home/tanayrs/lars-ros/lars_ws/src/DynamixelSDK/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg
