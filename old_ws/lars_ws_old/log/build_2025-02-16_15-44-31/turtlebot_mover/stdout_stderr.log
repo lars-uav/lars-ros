@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/turtlebot_mover/turtlebot_mover.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot_mover/turtlebot_mover.egg-info/dependency_links.txt
+writing entry points to ../../build/turtlebot_mover/turtlebot_mover.egg-info/entry_points.txt
+writing requirements to ../../build/turtlebot_mover/turtlebot_mover.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot_mover/turtlebot_mover.egg-info/top_level.txt
+file move_turtlebot_grid.py (for module move_turtlebot_grid) not found
+reading manifest file '../../build/turtlebot_mover/turtlebot_mover.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtlebot_mover/turtlebot_mover.egg-info/SOURCES.txt'
+running build
+running build_py
+file move_turtlebot_grid.py (for module move_turtlebot_grid) not found
+copying turtlebot_mover/move_turtlebot_grid.py -> /home/tanayrs/lars_ws/build/turtlebot_mover/build/lib/turtlebot_mover
+file move_turtlebot_grid.py (for module move_turtlebot_grid) not found
+running install
+running install_lib
+copying /home/tanayrs/lars_ws/build/turtlebot_mover/build/lib/turtlebot_mover/move_turtlebot_grid.py -> /home/tanayrs/lars_ws/install/turtlebot_mover/lib/python3.10/site-packages/turtlebot_mover
+byte-compiling /home/tanayrs/lars_ws/install/turtlebot_mover/lib/python3.10/site-packages/turtlebot_mover/move_turtlebot_grid.py to move_turtlebot_grid.cpython-310.pyc
+running install_egg_info
+removing '/home/tanayrs/lars_ws/install/turtlebot_mover/lib/python3.10/site-packages/turtlebot_mover-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/turtlebot_mover/turtlebot_mover.egg-info to /home/tanayrs/lars_ws/install/turtlebot_mover/lib/python3.10/site-packages/turtlebot_mover-0.0.0-py3.10.egg-info
+running install_scripts
+Installing move_turtlebot_grid script to /home/tanayrs/lars_ws/install/turtlebot_mover/lib/turtlebot_mover
+file move_turtlebot_grid.py (for module move_turtlebot_grid) not found
+writing list of installed files to '/home/tanayrs/lars_ws/build/turtlebot_mover/install.log'

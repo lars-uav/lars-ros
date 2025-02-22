@@ -1,0 +1,3 @@
+[console_scripts]
+move_turtlebot_grid = turtlebot_mover.move_turtlebot_grid:main
+
