@@ -12,7 +12,17 @@ This repository contains a modified version of the TurtleBot3 ROS2 packages cust
 ├── turtlebot3_msgs/      # TurtleBot3 message definitions
 └── turtlebot3_simulations/ # Simulation packages with LARS modifications
 ```
+## Physical Parts
 
+1. LARS Groundbot Frame
+2. Wheel Left Joint
+3. Wheel Right Joint
+4. Caster Back Right Joint
+5. Caster Back Left Joint
+6. IMU
+7. LDS LIDAR
+8. r200 Real Sense Camera
+   
 ## Modifications
 
 ### Physical Model Changes
