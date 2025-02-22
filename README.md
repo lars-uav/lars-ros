@@ -79,7 +79,7 @@ colcon build
 ```bash
 source install/setup.bash
 ```
-## Running the Grid Navigation
+## Running the Gazebo Simulation Environment
 
 To start the Gazebo Simulation Environment:
 ```bash
