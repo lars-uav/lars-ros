@@ -79,6 +79,12 @@ colcon build
 ```bash
 source install/setup.bash
 ```
+## Running the Grid Navigation
+
+To start the Gazebo Simulation Environment:
+```bash
+ros2 launch turtlebot3_gazebo empty_world.launch.py
+```
 
 ## Running the Grid Navigation
 
