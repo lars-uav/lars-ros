@@ -1,1 +1,0 @@
-/home/tanayrs/lars-ros/lars_ws/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/msg/detail/sound__type_support.hpp

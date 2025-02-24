@@ -1,3 +1,0 @@
-[console_scripts]
-control_node = lars_groundbot_control.control_node:main
-

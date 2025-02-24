@@ -1,9 +1,0 @@
-source;share/lars_groundbot_control/hook/pythonpath.ps1
-source;share/lars_groundbot_control/hook/pythonpath.dsv
-source;share/lars_groundbot_control/hook/pythonpath.sh
-source;share/lars_groundbot_control/hook/ament_prefix_path.ps1
-source;share/lars_groundbot_control/hook/ament_prefix_path.dsv
-source;share/lars_groundbot_control/hook/ament_prefix_path.sh
-source;../../build/lars_groundbot_control/share/lars_groundbot_control/hook/pythonpath_develop.ps1
-source;../../build/lars_groundbot_control/share/lars_groundbot_control/hook/pythonpath_develop.dsv
-source;../../build/lars_groundbot_control/share/lars_groundbot_control/hook/pythonpath_develop.sh
