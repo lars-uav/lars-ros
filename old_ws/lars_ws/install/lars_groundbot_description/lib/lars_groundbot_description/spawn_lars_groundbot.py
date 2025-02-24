@@ -1,1 +1,0 @@
-/home/tanayrs/lars-ros/lars_ws/src/lars_groundbot_description/launch/spawn_lars_groundbot.py
