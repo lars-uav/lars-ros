@@ -1,9 +1,7 @@
 name: Enforce PR Review Policy
-
 on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
-
 jobs:
   enforce_review:
     runs-on: ubuntu-latest
@@ -15,14 +13,16 @@ jobs:
         with:
           script: |
             const prAuthor = context.payload.pull_request.user.login;
-            const requiredReviewers = ['tanmayrainanda'];
-            const allowedReviewers = ['shuklaananya'];
+            const exemptUser = 'tanmayrainanda';
+            const allowedReviewers = ['tanmayrainanda','shuklaananya','tanayrs','bhargavajia'];
 
-            if (!requiredReviewers.includes(prAuthor)) {
-              console.log(`PR author ${prAuthor} does not require special review.`);
+            // If the PR author is exemptUser (tanmayrainanda), no review is required
+            if (prAuthor === exemptUser) {
+              console.log(`PR author ${prAuthor} is exempt from review requirements.`);
               return;
             }
 
+            // For all other users, check for at least one approval
             const { owner, repo, number } = context.issue;
             const response = await github.rest.pulls.listReviews({
               owner,
@@ -30,12 +30,15 @@ jobs:
               pull_number: number
             });
 
+            // Get approving reviews from allowed reviewers, excluding the PR author
             const approvingReviews = response.data.filter(review => 
-              review.state === "APPROVED" && allowedReviewers.includes(review.user.login)
+              review.state === "APPROVED" && 
+              allowedReviewers.includes(review.user.login) && 
+              review.user.login !== prAuthor
             );
 
             if (approvingReviews.length === 0) {
-              core.setFailed(`@${prAuthor}, your PR requires approval from at least one of: ${allowedReviewers.join(', ')}`);
+              core.setFailed(`@${prAuthor}, your PR requires approval from at least one other person in this list: ${allowedReviewers.join(', ')}`);
             } else {
               console.log(`PR has been approved by at least one required reviewer.`);
             }
