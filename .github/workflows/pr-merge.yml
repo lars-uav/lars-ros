@@ -1,0 +1,44 @@
+name: Enforce PR Review Policy
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+jobs:
+  enforce_review:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    steps:
+      - name: Check PR Author and Enforce Review Requirement
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prAuthor = context.payload.pull_request.user.login;
+            const exemptUser = 'tanmayrainanda';
+            const allowedReviewers = ['tanmayrainanda','shuklaananya','tanayrs','bhargavajia'];
+
+            // If the PR author is exemptUser (tanmayrainanda), no review is required
+            if (prAuthor === exemptUser) {
+              console.log(`PR author ${prAuthor} is exempt from review requirements.`);
+              return;
+            }
+
+            // For all other users, check for at least one approval
+            const { owner, repo, number } = context.issue;
+            const response = await github.rest.pulls.listReviews({
+              owner,
+              repo,
+              pull_number: number
+            });
+
+            // Get approving reviews from allowed reviewers, excluding the PR author
+            const approvingReviews = response.data.filter(review => 
+              review.state === "APPROVED" && 
+              allowedReviewers.includes(review.user.login) && 
+              review.user.login !== prAuthor
+            );
+
+            if (approvingReviews.length === 0) {
+              core.setFailed(`@${prAuthor}, your PR requires approval from at least one other person in this list: ${allowedReviewers.join(', ')}`);
+            } else {
+              console.log(`PR has been approved by at least one required reviewer.`);
+            }
