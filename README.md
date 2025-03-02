@@ -2,6 +2,17 @@
 
 This repository contains a modified version of the TurtleBot3 ROS2 packages customized for the LARS GroundBot. It includes the standard TurtleBot3 packages with specific modifications to accommodate the LARS GroundBot design, plus a custom navigation package.
 
+## IMPORTANT NOTE
+
+For any of the gazebo code to work, you **NEED** to add the below to your .bashrc:
+
+```
+source /opt/ros/humble/setup.bash
+source ~/lars_ws/install/setup.bash
+export TURTLEBOT3_MODEL='waffle'
+source /usr/share/gazebo/setup.sh
+```
+
 ## Repository Structure (under lars_ws)
 
 ```
