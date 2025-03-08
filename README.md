@@ -1,7 +1,5 @@
 # LARS TurtleBot3 Repository
 
-This repository contains a modified version of the TurtleBot3 ROS2 packages customized for the LARS GroundBot. It includes the standard TurtleBot3 packages with specific modifications to accommodate the LARS GroundBot design, plus a custom navigation package.
-
 ## IMPORTANT NOTE
 
 For any of the gazebo code to work, you **NEED** to add the below to your .bashrc:
@@ -121,8 +119,3 @@ This repository is based on the following original TurtleBot3 packages:
 - [TurtleBot3](https://github.com/ROBOTIS-GIT/turtlebot3)
 - [TurtleBot3 Messages](https://github.com/ROBOTIS-GIT/turtlebot3_msgs)
 - [TurtleBot3 Simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
-
-## Contributors
-
-- Original TurtleBot3 packages by ROBOTIS
-- LARS GroundBot modifications and grid navigation package by TanayRS
