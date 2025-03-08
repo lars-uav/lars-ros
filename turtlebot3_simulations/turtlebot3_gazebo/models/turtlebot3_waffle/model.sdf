@@ -38,6 +38,15 @@
           </mesh>
         </geometry>
       </visual>
+      <!-- Add GPS Sensor -->
+      <sensor name="gps_sensor" type="gps">
+        <pose>0 0 0.5 0 0 0</pose>  <!-- Position of the GPS sensor on the robot -->
+        <gps>
+          <horizontal_accuracy>5</horizontal_accuracy>
+      	  <vertical_accuracy>5</vertical_accuracy>
+      	  <update_rate>1.0</update_rate>
+    	</gps>
+  	</sensor>
     </link>
 
     <link name="imu_link">
