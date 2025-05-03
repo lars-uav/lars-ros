@@ -10,7 +10,7 @@ class LarsbotGridController(Node):
     def __init__(self):
         super().__init__('Larsbot_grid_controller')
         self.velocity_publisher = self.create_publisher(Twist, 'cmd_vel', 10)
-        self.gps_subscriber = self.create_subscription(NavSatFix, '/fix', self.gps_callback, 10)
+        self.gps_subscriber = self.create_subscription(NavSatFix, '/gps_data', self.gps_callback, 10)
         
         self.linear_speed = 0.15
         self.angular_speed = 0.5
