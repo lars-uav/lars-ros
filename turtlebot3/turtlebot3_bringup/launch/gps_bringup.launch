@@ -1,0 +1,16 @@
+<launch>
+    <!-- Launch the GPS driver -->
+    <node name="gps_driver" pkg="nmea_navsat_driver" type="nmea_serial_driver" output="screen">
+        <param name="port" value="/dev/ttyUSB0" /> <!-- Adjust to your GPS port -->
+        <param name="baud" value="9600" /> <!-- Adjust baud rate if needed -->
+    </node>
+
+    <!-- Optionally, use the navsat_transform_node for converting GPS data to UTM or map coordinates -->
+    <node name="navsat_transform_node" pkg="robot_localization" type="navsat_transform_node" output="screen">
+        <param name="broadcast_utm" value="true" />
+        <param name="frame_id" value="gps" />
+        <param name="base_link_frame_id" value="base_link" />
+        <param name="publish_filtered" value="true" />
+    </node>
+</launch>
+

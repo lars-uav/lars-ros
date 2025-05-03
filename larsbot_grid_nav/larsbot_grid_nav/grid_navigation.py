@@ -13,8 +13,8 @@ class LarsbotGridController(Node):
         self.velocity_publisher = self.create_publisher(Twist, 'cmd_vel', 10)
         
         # Movement parameters
-        self.linear_speed = 0.15  # Reduced for better control
-        self.angular_speed = 0.5  # radians per second
+        self.linear_speed = 0.295  # Reduced for better control
+        self.angular_speed = 0.73  # radians per second
         self.grid_size = 1.0     # 1 meter per grid cell
         
         # Store current state
@@ -44,6 +44,7 @@ class LarsbotGridController(Node):
 
         # Calculate time needed for movement (adding 10% to account for acceleration)
         duration = (distance / self.linear_speed) * 1.1
+        duration = 3.38
         
         # Execute movement
         self.is_moving = True
@@ -66,6 +67,7 @@ class LarsbotGridController(Node):
 
         # Calculate rotation time (adding 10% to account for acceleration)
         duration = (radians(angle_degrees) / self.angular_speed) * 1.1
+        duration = 2.15
         
         # Execute rotation
         self.is_moving = True
