@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+    <participant profile_name="super_client_profile" is_default_profile="true">
+        <rtps>
+            <builtin>
+                <discovery_config>
+                    <leaseDuration>
+                        <sec>3</sec>
+                        <nanosec>0</nanosec>
+                    </leaseDuration>
+                    <leaseAnnouncement>
+                        <sec>1</sec>
+                        <nanosec>0</nanosec>
+                    </leaseAnnouncement>
+                    <initialAnnouncements>
+                        <count>5</count>
+                        <period>
+                            <sec>0</sec>
+                            <nanosec>100000000</nanosec>
+                        </period>
+                    </initialAnnouncements>
+                </discovery_config>
+                <metatrafficUnicastLocatorList>
+                    <locator>
+                        <udpv4>
+                            <address>10.1.16.147</address>
+                            <port>7412</port>
+                        </udpv4>
+                    </locator>
+                </metatrafficUnicastLocatorList>
+                <initialPeersList>
+                    <locator>
+                        <udpv4>
+                            <address>10.1.56.223</address>
+                            <port>7400</port>
+                        </udpv4>
+                    </locator>
+                </initialPeersList>
+            </builtin>
+        </rtps>
+    </participant>
+</profiles>
